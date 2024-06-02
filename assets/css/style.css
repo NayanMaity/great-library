@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-image: url("../images/bodybg.png");
+}
+
+header {
+    padding: 5px 0px;
+    background-color: rgb(2, 2, 55);
+}
+
+.navbar-brand {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #fff !important;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    padding: 60px 0px;
+}
+
+.main-inner {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #222;
+    border-radius: 15px;
+}
+
+.main-head {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.main-info-box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #f8f7f7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-info-box i {
+    font-size: 35px;
+}
+
+.main-info-box p {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.listed-book-info-box {
+    border: 1px solid #2d925b;
+    color: #2d925b;
+}
+
+.issue-book-info-box,
+.issue-book-info-box-user {
+    border: 1px solid #2d9092;
+    color: #2d9092;
+}
+
+.not-return-book-info-box,
+.not-return-book-info-box-user {
+    border: 1px solid #ba8c50;
+    color: #ba8c50;
+}
+
+.reg-user-info-box {
+    border: 1px solid #ba506a;
+    color: #ba506a;
+}
+
+.lisetd-author-info-box {
+    border: 1px solid #182e73;
+    color: #182e73;
+}
+
+.listed-gategory-info-box {
+    border: 1px solid #cacd15;
+    color: #cacd15;
+}
+
+
+
+
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid #2d9092;
+    overflow: hidden;
+    margin: auto;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.main-table-inner {
+    display: none;
+    margin-top: 50px;
+}
+
+.main-table-inner-head {
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+}
+
+.main-table-inner-head h6 {
+    font-size: 17px;
+}
+
+#list-book-search,
+#list-book-search-user,
+#issue-book-search-user,
+#nrb-book-search-user,
+#list-author-search,
+#list-cate-search,
+#registred-user-search,
+#issued-book-search {
+    width: 200px;
+}
+
+
+.listed-books {
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+
+.listed-book-box {
+    width: 150px;
+    position: relative;
+}
+
+.book-action {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.book-btn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listed-book-title,
+.listed-cate-title,
+.listed-author-title {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.listed-book-author {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.book-issue-date,
+.book-return-date {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.book-return-date {
+    color: red;
+    padding-top: 0px;
+}
+
+
+
+#listed-author {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-author,
+.delete-author {
+    padding: 2px 12px;
+    border-radius: 20px;
+    border: 1px solid #222;
+}
+
+
+
+
+.listed-categories {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.view-category,
+.delete-category {
+    padding: 2px 12px;
+    border-radius: 20px;
+    border: 1px solid #222;
+}
+
+
+
+.registred-user {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.registred-user-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #222;
+    margin-right: 10px;
+}
+
+.registred-user-email {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.registred-user-view,
+.registred-user-delete {
+    padding: 2px 12px;
+    border-radius: 20px;
+    border: 1px solid #222;
+}
+
+#add-user,
+#add-cate,
+#add-author,
+#add-book {
+    cursor: pointer;
+    padding: 2px 10px;
+    background: #e7e7e7;
+    border: 1px solid #222;
+    border-radius: 15px;
+}
+
+
+#reg-page-sec,
+#login-page-sec {
+    width: 100%;
+    height: 100vh;
+}
+
+#reg-page-sec .container-lg,
+#login-page-sec .container-lg {
+    height: 100%;
+}
+
+#register-form,
+#login-form,
+#admin-login-form,
+#search-user-form {
+    max-width: 500px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    background-color: #51b6b4;
+}
+
+
+#reg-popup,
+#login-popup,
+#search-user-popup,
+#home-popup,
+#admin-login-popup,
+#std-reg-popup {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup-box {
+    margin: 100px auto;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+#close-popup {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+#update-err-msg {
+    color: red;
+}
