@@ -39,8 +39,7 @@
 
 <p><strong>Database:</strong></p>
 <br>
-<p>
-    Name: great_library_db
+<p>Name: great_library_db</p>
     <ul>
         Tables:
         <li>user</li>
@@ -49,11 +48,11 @@
         <li>books</li>
         <li>issue</li>
     </ul>
-</p>
+
 
 <br>
 <ul>
-    user table:
+    <p>user table:</p>
     <li>user_id(int 11, primary key)</li>
     <li>user_name(varchar 255)</li>
     <li>user_email(varchar 255)</li>
@@ -68,7 +67,7 @@
 
 <br>
 <ul>
-    category table:
+    <p>category table:</p>
     <li>cate_id(int 11, primary key)</li>
     <li>cate_name(varchar 255)</li>
     <li>cate_desc(varchar 255)</li>
@@ -79,7 +78,7 @@
 
 <br>
 <ul>
-    author table:
+    <p>author table:</p>
     <li>author_id(int 11, primary key)</li>
     <li>author_name(varchar 255)</li>
     <li>author_show(enum -> 0, 1)</li>
@@ -89,7 +88,7 @@
 
 <br>
 <ul>
-    book table:
+    <p>book table:</p>
     <li>book_id(int 11, primary key)</li>
     <li>book_title(varchar 255)</li>
     <li>book_desc(varchar 255)</li>
@@ -104,7 +103,7 @@
 
 <br>
 <ul>
-    issue table:
+    <p>issue table:</p>
     <li>issue_id(int 11, primary key)</li>
     <li>book_id(refarance form books table)</li>
     <li>user_id(refarance form user table)</li>
@@ -115,3 +114,26 @@
     <li>returned_at(varchar 255)</li>
 </ul>
 
+---------------------------------------------------->
+
+<h2>How to run the Great Library Project</h2>
+<ol>
+    <li>Download the zip file</li>
+    <li>Extract the file and copy great_library_db folder</li>
+    <li>Paste inside root directory(for xampp, xampp/htdocs, for wamp, wamp/www, for lamp, var/www/Html)</li>
+    <li>Open PHPMyAdmin (http://localhost/phpmyadmin)</li>
+    <li>Create a database with name today_s_time_db</li>
+    <li>Import today_s_time_db.sql file(given inside the zip package in SQL file folder)</li>
+    <li>Run the script http://localhost/great_library (frontend)</li>
+    <li>For admin panel http://localhost/great_library/admin (admin panel)</li>
+</ol>
+
+<ul>Credential for admin panel :
+    <li>useremail: admin@gmail.com</li>
+    <li>Password: 12345</li>
+</ul>
+
+<ul>Credential for user panel :
+    <li>useremail: demo@gmail.com</li>
+    <li>Password: 12345</li>
+</ul>
